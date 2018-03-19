@@ -15,9 +15,8 @@
         <div class="main-navigation-top">
           <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
             <button type="submit" class="submit-btn">Поиск</button>
-            <input type="search" id="search" name="search" class="search" placeholder="Поиск">
+            <input type="search" class="search" id="search" name="search" placeholder="Поиск">
           </form>
-
           <ul class="header-user-navigation">
             <!--
             <li class="user-navigation-item login-link">
@@ -26,10 +25,10 @@
               </a>
             </li>
             -->
-            <li class="user-navigation-item username hidden">
+            <li class="user-navigation-item username">
               Натали Дормер
             </li>
-            <li class="user-navigation-item logout-link hidden">
+            <li class="user-navigation-item logout-link">
               <a href="#">
                 Выйти
               </a>
@@ -54,7 +53,7 @@
                 Каталог товаров
               </a>
 
-              <ul class="catalog-links hidden">
+              <ul class="catalog-links">
                 <li class="catalog-link">
                   <a href="#">
                     Виртуальная реальность
@@ -145,12 +144,12 @@
 
               <label for="min-scale">
                 <span>от</span>
-                <input type="text" value="0" id="min-scale">
+                <input type="text" class="min-scale" id="min-scale" name="min-scale" value="0">
               </label>
 
               <label for="max-scale">
                 <span>до</span>
-                <input type="text" value="0" id="max-scale">
+                <input type="text" class="max-scale" id="max-scale" name="max-scale" value="5000">
               </label>
             </fieldset>
 
@@ -159,24 +158,25 @@
                 Цвет
               </legend>
 
-              <label class="checkbox" for="check1">Черный
-                <input id="check1" type="checkbox" class="hidden" name="color-black" value="black" checked>
+              <label class="checkbox" for="check1">
+                Черный
+                <input type="checkbox" class="hidden" id="check1" name="color-black" value="black" checked>
               </label>
               <label class="checkbox" for="check2">
                 Белый
-                <input id="check2" type="checkbox" class="hidden" name="color-white" value="white">
+                <input type="checkbox" class="hidden" id="check2" name="color-white" value="white">
               </label>
               <label class="checkbox" for="check3">
                 Синий
-                <input id="check3" type="checkbox" class="hidden" name="color-blue" value="blue" checked>
+                <input type="checkbox" class="hidden" id="check3" name="color-blue" value="blue" checked>
               </label>
               <label class="checkbox" for="check4">
                 Красный
-                <input id="check4" type="checkbox" class="hidden" name="color-red" value="red" checked>
+                <input type="checkbox" class="hidden" id="check4"  name="color-red" value="red" checked>
               </label>
-              <label class="checkbox" for="check4">
+              <label class="checkbox" for="check5">
                 Розовый
-                <input id="check5" type="checkbox" class="hidden" name="color-pink" value="pink">
+                <input type="checkbox" class="hidden" id="check5" name="color-pink" value="pink">
               </label>
             </fieldset>
 
@@ -187,16 +187,16 @@
 
               <ul class="bluetooth-options">
                 <li class="bluetooth-option">
-                  <label class="radio-label" for="blue1">
+                  <input type="radio" class="hidden" id="blue1" name="bluetooth" value="yes" checked>
+                  <label class="radio-label radio-label-checked" for="blue1">
                     Есть
                   </label>
-                  <input type="radio" name="bluetooth" id="blue1" class="bluetooth-radio" value="yes" checked>
                 </li>
                 <li class="bluetooth-option">
+                  <input type="radio" class="hidden" id="blue2" name="bluetooth" value="no">
                   <label class="radio-label" for="blue2">
                     Нет
                   </label>
-                  <input type="radio" name="bluetooth" id="blue2" class="bluetooth-radio" value="no">
                 </li>
               </ul>
             </fieldset>
@@ -213,17 +213,17 @@
 
             <ul class="sort-options">
               <li class="sort-option">
-                <a hred="#">
+                <a href="#">
                   По цене
                 </a>
               </li>
               <li class="sort-option">
-                <a hred="#">
+                <a href="#">
                   По типу
                 </a>
               </li>
               <li class="sort-option">
-                <a hred="#">
+                <a href="#">
                   По популярности
                 </a>
               </li>
@@ -231,12 +231,12 @@
 
             <ul class="sort-btns">
               <li class="increase-sort">
-                <a href="#" class="inc-btn sort-btn">
+                <a class="inc-btn sort-btn" href="#">
                   <span class="visually-hidden">По возрастанию</span>
                 </a>
               </li>
               <li class="decrease-sort active">
-                <a href="#" class="dec-btn sort-btn sort-btn-active">
+                <a class="dec-btn sort-btn sort-btn-active" href="#">
                   <span class="visually-hidden">По убыванию</span>
                 </a>
               </li>
@@ -260,11 +260,11 @@
                 </span>
               </div>
 
-              <div class="item-overlay-btns hidden">
-                <a href="#" class="add-basket-btn">
+              <div class="item-overlay-btns">
+                <a class="add-basket-btn" href="#">
                   Добавить в корзину
                 </a>
-                <a href="#" class="add-compare-btn">
+                <a class="add-compare-btn" href="#">
                   Добавить к сравнению
                 </a>
               </div>
@@ -282,11 +282,11 @@
                 </span>
               </div>
 
-              <div class="item-overlay-btns hidden">
-                <a href="#" class="add-basket-btn">
+              <div class="item-overlay-btns">
+                <a class="add-basket-btn" href="#">
                   Добавить в корзину
                 </a>
-                <a href="#" class="add-compare-btn">
+                <a class="add-compare-btn" href="#">
                   Добавить к сравнению
                 </a>
               </div>
@@ -304,11 +304,11 @@
                 </span>
               </div>
 
-              <div class="item-overlay-btns hidden">
-                <a href="#" class="add-basket-btn">
+              <div class="item-overlay-btns">
+                <a class="add-basket-btn" href="#">
                   Добавить в корзину
                 </a>
-                <a href="#" class="add-compare-btn">
+                <a class="add-compare-btn" href="#">
                   Добавить к сравнению
                 </a>
               </div>
@@ -326,11 +326,11 @@
                 </span>
               </div>
 
-              <div class="item-overlay-btns hidden">
-                <a href="#" class="add-basket-btn">
+              <div class="item-overlay-btns">
+                <a class="add-basket-btn" href="#">
                   Добавить в корзину
                 </a>
-                <a href="#" class="add-compare-btn">
+                <a class="add-compare-btn" href="#">
                   Добавить к сравнению
                 </a>
               </div>
@@ -427,10 +427,10 @@
             </a>
           </li>
           -->
-          <li class="user-navigation-item username hidden">
+          <li class="user-navigation-item username">
             Натали Дормер
           </li>
-          <li class="user-navigation-item logout-link hidden">
+          <li class="user-navigation-item logout-link">
             <a href="#">
               Выйти
             </a>

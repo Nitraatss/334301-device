@@ -15,9 +15,8 @@
         <div class="main-navigation-top">
           <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
             <button type="submit" class="submit-btn">Поиск</button>
-            <input type="search" id="search" name="search" class="search" placeholder="Поиск">
+            <input type="search" class="search" id="search" name="search" placeholder="Поиск">
           </form>
-
           <ul class="header-user-navigation">
             <li class="user-navigation-item login-link">
               <a href="#">
@@ -25,12 +24,12 @@
               </a>
             </li>
             <!--
-            <li class="user-navigation-item username hidden">
+            <li class="user-navigation-item username">
               Натали Дормер
             </li>
             -->
             <!--
-            <li class="user-navigation-item logout-link hidden">
+            <li class="user-navigation-item logout-link">
               <a href="#">
                 Выйти
               </a>
@@ -56,7 +55,7 @@
                 Каталог товаров
               </a>
 
-              <ul class="catalog-links hidden">
+              <ul class="catalog-links">
                 <li class="catalog-link">
                   <a href="#">
                     Виртуальная реальность
@@ -113,9 +112,9 @@
           Слайдер с крутыми девайсами
         </h2>
 
-        <input type="radio" name="slides" id="sld-1" class="slider-radio hidden" checked>
-        <input type="radio" name="slides" id="sld-2" class="slider-radio hidden">
-        <input type="radio" name="slides" id="sld-3" class="slider-radio hidden">
+        <input type="radio" class="hidden" id="sld-1" name="slides" value="sld-1" checked>
+        <input type="radio" class="hidden" id="sld-2" name="slides" value="sld-2">
+        <input type="radio" class="hidden" id="sld-3" name="slides" value="sld-3">
 
         <div class="slider-controls">
           <label class="slider-switcher" for="sld-1">
@@ -238,47 +237,36 @@
 
         <a class="popular-item" href="#">
           <img src="./img/popular-1.svg" alt="популярное" width="97" height="55">
-
           <h3>
             Виртуальная реальность
           </h3>
         </a>
-
         <a class="popular-item" href="#">
           <img src="./img/popular-2.svg" alt="популярное" width="86" height="117">
-
           <h3>
             Моноподы для селфи
           </h3>
         </a>
-
         <a class="popular-item" href="#">
           <img src="./img/popular-3.svg" alt="популярное" width="71" height="87">
-
           <h3>
             Экшен-камеры
           </h3>
         </a>
-
         <a class="popular-item" href="#">
           <img src="./img/popular-4.svg" alt="популярное" width="107" height="65">
-
           <h3>
             Фитнес-браслеты
           </h3>
         </a>
-
         <a class="popular-item" href="#">
           <img src="./img/popular-5.svg" alt="популярное" width="56" height="98">
-
           <h3>
             Умные часы
           </h3>
         </a>
-
         <a class="popular-item" href="#">
           <img src="./img/popular-6.svg" alt="популярное" width="132" height="69">
-
           <h3>
             Квадракоптеры
           </h3>
@@ -290,9 +278,9 @@
           Обслуживание
         </h2>
 
-        <input type="radio" name="services" id="srv-1" class="service-radio hidden" checked>
-        <input type="radio" name="services" id="srv-2" class="service-radio hidden">
-        <input type="radio" name="services" id="srv-3" class="service-radio hidden">
+        <input type="radio" class="hidden" id="srv-1" name="services" value="srv-1" checked>
+        <input type="radio" class="hidden" id="srv-2" name="services" value="srv-2">
+        <input type="radio" class="hidden" id="srv-3" name="services" value="srv-3">
 
         <div class="services-controls">
           <label class="services-switcher" for="srv-1">
@@ -307,7 +295,7 @@
         </div>
 
         <ul class="services-description">
-          <li class="service-description delivery-description service-active">
+          <li class="service-description delivery-description">
             <h2 class="service-title">
               Доставка
             </h2>
@@ -320,7 +308,7 @@
               Иконка-доставки
             </div>
           </li>
-          <li class="service-description guarantee-description hidden">
+          <li class="service-description guarantee-description">
             <h2 class="service-title">
               Гарантия
             </h2>
@@ -333,7 +321,7 @@
               Иконка-гарантии
             </div>
           </li>
-          <li class="service-description credit-description hidden">
+          <li class="service-description credit-description">
             <h2 class="service-title">
               Кредит
             </h2>
@@ -354,25 +342,19 @@
           Наши партнеры
         </h2>
 
-        <a href="#" class="partner-logo dji"> <!--background-item-->
+        <a class="partner-logo dji" href="#"> <!--background-item-->
           <span class="visually-hidden">DJI</span>
           <img src="./img/logo-1.png" alt="partner-logo" width="260" height="100">
         </a>
-
-
-        <a href="#" class="partner-logo spgadgets">
+        <a class="partner-logo spgadgets" href="#">
           <span class="visually-hidden">SPGadgets</span>
           <img src="./img/logo-2.png" alt="partner-logo" width="260" height="100">
         </a>
-
-
-        <a href="#" class="partner-logo gopro">
+        <a class="partner-logo gopro" href="#">
           <span class="visually-hidden">GoPro</span>
           <img src="./img/logo-3.png" alt="partner-logo" width="260" height="100">
         </a>
-
-
-        <a href="#" class="partner-logo vive">
+        <a class="partner-logo vive" href="#">
           <span class="visually-hidden">Vive</span>
           <img src="./img/logo-4.png" alt="partner-logo" width="260" height="100">
         </a>
@@ -429,7 +411,7 @@
         </div>
       </section>
 
-      <div class="pop-up-map hidden">
+      <div class="pop-up-map">
         <img src="./img/map-big.jpg" alt="карта" width="960" height="559">
 
         <button class="close-map" id="close-map">
@@ -437,7 +419,7 @@
         </button> <!--в css-->
       </div>
 
-      <div class="pop-up-contacts hidden">
+      <div class="pop-up-contacts">
         <form class="pop-up-contacts-form" method="post" action="https://echo.htmlacademy.ru">
           <div class="labels-wrapper">
             <label>
@@ -521,12 +503,12 @@
             </a>
           </li>
           <!--
-          <li class="user-navigation-item username hidden">
+          <li class="user-navigation-item username">
             Натали Дормер
           </li>
           -->
           <!--
-          <li class="user-navigation-item logout-link hidden">
+          <li class="user-navigation-item logout-link">
             <a href="#">
               Выйти
             </a>
