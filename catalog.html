@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <header class="header">
@@ -14,8 +16,11 @@
       <nav class="main-navigation">
         <div class="main-navigation-top">
           <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
-            <button type="submit" class="submit-btn">Поиск</button>
+            <span class="visually-hidden">Поиск</span>
             <input type="search" class="search" id="search" name="search" placeholder="Поиск">
+            <button type="submit" class="submit-btn">
+              <span>Найти</span>
+            </button>
           </form>
           <ul class="header-user-navigation">
             <!--
@@ -158,25 +163,29 @@
                 Цвет
               </legend>
 
-              <label class="checkbox" for="check1">
+              <input type="checkbox" class="hidden" id="check1" name="color-black" value="black" checked>
+              <label class="checkbox" for="check1" tabindex="0">
                 Черный
-                <input type="checkbox" class="hidden" id="check1" name="color-black" value="black" checked>
               </label>
-              <label class="checkbox" for="check2">
+
+              <input type="checkbox" class="hidden" id="check2" name="color-white" value="white">
+              <label class="checkbox" for="check2" tabindex="0">
                 Белый
-                <input type="checkbox" class="hidden" id="check2" name="color-white" value="white">
               </label>
-              <label class="checkbox" for="check3">
+
+              <input type="checkbox" class="hidden" id="check3" name="color-blue" value="blue" checked>
+              <label class="checkbox" for="check3" tabindex="0">
                 Синий
-                <input type="checkbox" class="hidden" id="check3" name="color-blue" value="blue" checked>
               </label>
-              <label class="checkbox" for="check4">
+
+              <input type="checkbox" class="hidden" id="check4"  name="color-red" value="red" checked>
+              <label class="checkbox" for="check4" tabindex="0">
                 Красный
-                <input type="checkbox" class="hidden" id="check4"  name="color-red" value="red" checked>
               </label>
-              <label class="checkbox" for="check5">
+
+              <input type="checkbox" class="hidden" id="check5" name="color-pink" value="pink">
+              <label class="checkbox" for="check5" tabindex="0">
                 Розовый
-                <input type="checkbox" class="hidden" id="check5" name="color-pink" value="pink">
               </label>
             </fieldset>
 
@@ -188,7 +197,7 @@
               <ul class="bluetooth-options">
                 <li class="bluetooth-option">
                   <input type="radio" class="hidden" id="blue1" name="bluetooth" value="yes" checked>
-                  <label class="radio-label radio-label-checked" for="blue1">
+                  <label class="radio-label" for="blue1">
                     Есть
                   </label>
                 </li>
@@ -232,12 +241,12 @@
             <ul class="sort-btns">
               <li class="increase-sort">
                 <a class="inc-btn sort-btn" href="#">
-                  <span class="visually-hidden">По возрастанию</span>
+                  <span class="visually-hidden1">По возрастанию</span>
                 </a>
               </li>
-              <li class="decrease-sort active">
-                <a class="dec-btn sort-btn sort-btn-active" href="#">
-                  <span class="visually-hidden">По убыванию</span>
+              <li class="decrease-sort">
+                <a class="dec-btn sort-btn" href="#">
+                  <span class="visually-hidden1">По убыванию</span>
                 </a>
               </li>
             </ul>
@@ -262,7 +271,7 @@
 
               <div class="item-overlay-btns">
                 <a class="add-basket-btn" href="#">
-                  Добавить в корзину
+                  В корзину
                 </a>
                 <a class="add-compare-btn" href="#">
                   Добавить к сравнению
@@ -284,7 +293,7 @@
 
               <div class="item-overlay-btns">
                 <a class="add-basket-btn" href="#">
-                  Добавить в корзину
+                  В корзину
                 </a>
                 <a class="add-compare-btn" href="#">
                   Добавить к сравнению
@@ -306,7 +315,7 @@
 
               <div class="item-overlay-btns">
                 <a class="add-basket-btn" href="#">
-                  Добавить в корзину
+                  В корзину
                 </a>
                 <a class="add-compare-btn" href="#">
                   Добавить к сравнению
@@ -328,7 +337,7 @@
 
               <div class="item-overlay-btns">
                 <a class="add-basket-btn" href="#">
-                  Добавить в корзину
+                  В корзину
                 </a>
                 <a class="add-compare-btn" href="#">
                   Добавить к сравнению
@@ -370,7 +379,7 @@
 
     <footer class="footer">
       <div class="footer-left">
-        <a class="logo" href="./index.html">
+        <a class="footer-logo" href="./index.html">
           <span class="visually-hidden">Device</span>
           <img src="./img/logo-footer.png" alt="лого-сайта" width="164" height="36">
         </a>
@@ -402,17 +411,17 @@
         <ul class="footer-socials">
           <li class="footer-socials-item fb-link">
             <a href="#">
-              <span class="visually-hidden">facebook</span>
+              <span class="visually-hidden1">facebook</span>
             </a>
           </li>
           <li class="footer-socials-item inst-link">
             <a href="#">
-              <span class="visually-hidden">instagram</span>
+              <span class="visually-hidden1">instagram</span>
             </a>
           </li>
           <li class="footer-socials-item tw-link">
             <a href="#">
-              <span class="visually-hidden">twitter</span>
+              <span class="visually-hidden1">twitter</span>
             </a>
           </li>
         </ul>
@@ -451,7 +460,7 @@
           Тел.: <a href="tel:+7495495-95-95">+7 (495) 495-95-95</a>
         </p>
 
-        <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+        <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
           <span class="visually-hidden">Сайт академии</span>
           <img src="./img/logo-html.svg" alt="copyright" width="27" height="35">
         </a>

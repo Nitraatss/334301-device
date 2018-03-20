@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <header class="header">
@@ -14,8 +16,11 @@
       <nav class="main-navigation">
         <div class="main-navigation-top">
           <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
-            <button type="submit" class="submit-btn">Поиск</button>
+            <span class="visually-hidden">Поиск</span>
             <input type="search" class="search" id="search" name="search" placeholder="Поиск">
+            <button type="submit" class="submit-btn">
+              <span>Найти</span>
+            </button>
           </form>
           <ul class="header-user-navigation">
             <li class="user-navigation-item login-link">
@@ -117,14 +122,14 @@
         <input type="radio" class="hidden" id="sld-3" name="slides" value="sld-3">
 
         <div class="slider-controls">
-          <label class="slider-switcher" for="sld-1">
-            <span class="visually-hidden">Переключатель 1</span>
+          <label class="slider-switcher" for="sld-1" tabindex="0">
+            <span class="visually-hidden1">Переключатель 1</span>
           </label>
-          <label class="slider-switcher" for="sld-2">
-            <span class="visually-hidden">Переключатель 2</span>
+          <label class="slider-switcher" for="sld-2" tabindex="0">
+            <span class="visually-hidden1">Переключатель 2</span>
           </label>
-          <label class="slider-switcher" for="sld-3">
-            <span class="visually-hidden">Переключатель 3</span>
+          <label class="slider-switcher" for="sld-3" tabindex="0">
+            <span class="visually-hidden1">Переключатель 3</span>
           </label>
         </div>
 
@@ -236,37 +241,49 @@
         </h2>
 
         <a class="popular-item" href="#">
-          <img src="./img/popular-1.svg" alt="популярное" width="97" height="55">
+          <div class="popular-item-logo">
+            <img src="./img/popular-1.svg" alt="популярное" width="97" height="55">
+          </div>
           <h3>
             Виртуальная реальность
           </h3>
         </a>
         <a class="popular-item" href="#">
-          <img src="./img/popular-2.svg" alt="популярное" width="86" height="117">
+          <div class="popular-item-logo">
+            <img src="./img/popular-2.svg" alt="популярное" width="86" height="117">
+          </div>
           <h3>
             Моноподы для селфи
           </h3>
         </a>
         <a class="popular-item" href="#">
-          <img src="./img/popular-3.svg" alt="популярное" width="71" height="87">
+          <div class="popular-item-logo">
+            <img src="./img/popular-3.svg" alt="популярное" width="71" height="87">
+          </div>
           <h3>
             Экшен-камеры
           </h3>
         </a>
         <a class="popular-item" href="#">
-          <img src="./img/popular-4.svg" alt="популярное" width="107" height="65">
+          <div class="popular-item-logo">
+            <img src="./img/popular-4.svg" alt="популярное" width="107" height="65">
+          </div>
           <h3>
             Фитнес-браслеты
           </h3>
         </a>
         <a class="popular-item" href="#">
-          <img src="./img/popular-5.svg" alt="популярное" width="56" height="98">
+          <div class="popular-item-logo">
+            <img src="./img/popular-5.svg" alt="популярное" width="56" height="98">
+          </div>
           <h3>
             Умные часы
           </h3>
         </a>
         <a class="popular-item" href="#">
-          <img src="./img/popular-6.svg" alt="популярное" width="132" height="69">
+          <div class="popular-item-logo">
+            <img src="./img/popular-6.svg" alt="популярное" width="132" height="69">
+          </div>
           <h3>
             Квадракоптеры
           </h3>
@@ -305,7 +322,7 @@
             </p>
 
             <div class="service-icon delivery-icon"> <!--иконка псевдоэлемент nth-->
-              Иконка-доставки
+              <span class="visually-hidden1">Иконка-доставки</span>
             </div>
           </li>
           <li class="service-description guarantee-description">
@@ -318,7 +335,7 @@
             </p>
 
             <div class="service-icon guarantee-icon"> <!--иконка псевдоэлемент nth-->
-              Иконка-гарантии
+              <span class="visually-hidden1">Иконка-гарантии</span>
             </div>
           </li>
           <li class="service-description credit-description">
@@ -331,7 +348,7 @@
             </p>
 
             <div class="service-icon credit-icon"> <!--иконка псевдоэлемент nth-->
-              Иконка-кредита
+              <span class="visually-hidden1">Иконка-кредита</span>
             </div>
           </li>
         </ul>
@@ -423,10 +440,11 @@
         <form class="pop-up-contacts-form" method="post" action="https://echo.htmlacademy.ru">
           <div class="labels-wrapper">
             <label>
-                Ваше имя:
+              Ваше имя:
               <input type="text" class="name" id="name" name="username" placeholder="Имя Фамилия">
             </label>
             <label>
+              Ваш e-mail:
               <input type="email" class="email" id="email" name="email-adress" placeholder="email@example.com">
             </label>
           </div>
@@ -447,7 +465,7 @@
 
     <footer class="footer">
       <div class="footer-left">
-        <a class="logo">
+        <a class="footer-logo">
           <span class="visually-hidden">Device</span>
           <img src="./img/logo-footer.png" alt="лого-сайта" width="164" height="36">
         </a>
@@ -479,17 +497,17 @@
         <ul class="footer-socials">
           <li class="footer-socials-item fb-link">
             <a href="#">
-              <span class="visually-hidden">facebook</span>
+              <span class="visually-hidden1">facebook</span>
             </a>
           </li>
           <li class="footer-socials-item inst-link">
             <a href="#">
-              <span class="visually-hidden">instagram</span>
+              <span class="visually-hidden1">instagram</span>
             </a>
           </li>
           <li class="footer-socials-item tw-link">
             <a href="#">
-              <span class="visually-hidden">twitter</span>
+              <span class="visually-hidden1">twitter</span>
             </a>
           </li>
         </ul>
@@ -530,7 +548,7 @@
           Тел.: <a href="tel:+7495495-95-95">+7 (495) 495-95-95</a>
         </p>
 
-        <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+        <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
           <span class="visually-hidden">Сайт академии</span>
           <img src="./img/logo-html.svg" alt="copyright" width="27" height="35">
         </a>
