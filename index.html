@@ -299,59 +299,61 @@
         <input type="radio" class="hidden" id="srv-2" name="services" value="srv-2">
         <input type="radio" class="hidden" id="srv-3" name="services" value="srv-3">
 
-        <div class="services-controls">
-          <label class="services-switcher" for="srv-1">
-            Доставка
-          </label>
-          <label class="services-switcher" for="srv-2">
-            Гарантия
-          </label>
-          <label class="services-switcher" for="srv-3">
-            Кредит
-          </label>
-        </div>
-
-        <ul class="services-description">
-          <li class="service-description delivery-description">
-            <h2 class="service-title">
+        <div class="services-wrapper">
+          <div class="services-controls">
+            <label class="services-switcher" for="srv-1">
               Доставка
-            </h2>
-
-            <p class="service-info">
-              Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
-            </p>
-
-            <div class="service-icon delivery-icon"> <!--иконка псевдоэлемент nth-->
-              <span class="visually-hidden1">Иконка-доставки</span>
-            </div>
-          </li>
-          <li class="service-description guarantee-description">
-            <h2 class="service-title">
+            </label>
+            <label class="services-switcher" for="srv-2">
               Гарантия
-            </h2>
-
-            <p class="service-info">
-              Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
-            </p>
-
-            <div class="service-icon guarantee-icon"> <!--иконка псевдоэлемент nth-->
-              <span class="visually-hidden1">Иконка-гарантии</span>
-            </div>
-          </li>
-          <li class="service-description credit-description">
-            <h2 class="service-title">
+            </label>
+            <label class="services-switcher" for="srv-3">
               Кредит
-            </h2>
+            </label>
+          </div>
 
-            <p class="service-info">
-              Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные  условия кредита. Выгодные для нашего банка, разумеется.
-            </p>
+          <ul class="services-description">
+            <li class="service-description delivery-description">
+              <h2 class="service-title">
+                Доставка
+              </h2>
 
-            <div class="service-icon credit-icon"> <!--иконка псевдоэлемент nth-->
-              <span class="visually-hidden1">Иконка-кредита</span>
-            </div>
-          </li>
-        </ul>
+              <p class="service-info">
+                Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+              </p>
+
+              <div class="service-icon delivery-icon"> <!--иконка псевдоэлемент nth-->
+                <span class="visually-hidden1">Иконка-доставки</span>
+              </div>
+            </li>
+            <li class="service-description guarantee-description">
+              <h2 class="service-title">
+                Гарантия
+              </h2>
+
+              <p class="service-info">
+                Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
+              </p>
+
+              <div class="service-icon guarantee-icon"> <!--иконка псевдоэлемент nth-->
+                <span class="visually-hidden1">Иконка-гарантии</span>
+              </div>
+            </li>
+            <li class="service-description credit-description">
+              <h2 class="service-title">
+                Кредит
+              </h2>
+
+              <p class="service-info">
+                Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные  условия кредита. Выгодные для нашего банка, разумеется.
+              </p>
+
+              <div class="service-icon credit-icon"> <!--иконка псевдоэлемент nth-->
+                <span class="visually-hidden1">Иконка-кредита</span>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="partners-logos">
@@ -433,6 +435,7 @@
 
         <button class="close-map" id="close-map">
           <span class="visually-hidden">Закрыть карту</span>
+          x
         </button> <!--в css-->
       </div>
 
@@ -440,17 +443,17 @@
         <form class="pop-up-contacts-form" method="post" action="https://echo.htmlacademy.ru">
           <div class="labels-wrapper">
             <label>
-              Ваше имя:
+              <span>Ваше имя:</span>
               <input type="text" class="name" id="name" name="username" placeholder="Имя Фамилия">
             </label>
             <label>
-              Ваш e-mail:
+              <span>Ваш e-mail:</span>
               <input type="email" class="email" id="email" name="email-adress" placeholder="email@example.com">
             </label>
           </div>
 
-          <label>
-            Текст письма:
+          <label class="message-label">
+            <span>Текст письма:</span>
             <textarea class="message" name="message" placeholder="В свободной форме"></textarea>
           </label>
 
@@ -459,99 +462,102 @@
 
         <button class="close-form" id="close-form">
           <span class="visually-hidden">Закрыть форму письма</span>
+          x
         </button>
       </div>
     </main>
 
     <footer class="footer">
-      <div class="footer-left">
-        <a class="footer-logo">
-          <span class="visually-hidden">Device</span>
-          <img src="./img/logo-footer.png" alt="лого-сайта" width="164" height="36">
-        </a>
+      <div class="footer-wrapper">
+        <div class="footer-left">
+          <a class="footer-logo">
+            <span class="visually-hidden">Device</span>
+            <img src="./img/logo-footer.png" alt="лого-сайта" width="164" height="36">
+          </a>
 
-        <p class="footer-address">
-          г. Москва, ул. Строителей, 15
-        </p>
-      </div>
+          <p class="footer-address">
+            г. Москва, ул. Строителей, 15
+          </p>
+        </div>
 
-      <div class="footer-middle">
-        <ul class="services-links">
-          <li class="services-link delivery-link">
-            <a href="#">
-              Доставка
-            </a>
-          </li>
-          <li class="services-link guarantee-link">
-            <a href="#">
-              Гарантия
-            </a>
-          </li>
-          <li class="services-link contacts-link">
-            <a href="#">
-              Контакты
-            </a>
-          </li>
-        </ul>
+        <div class="footer-middle">
+          <ul class="services-links">
+            <li class="services-link delivery-link">
+              <a href="#">
+                Доставка
+              </a>
+            </li>
+            <li class="services-link guarantee-link">
+              <a href="#">
+                Гарантия
+              </a>
+            </li>
+            <li class="services-link contacts-link">
+              <a href="#">
+                Контакты
+              </a>
+            </li>
+          </ul>
 
-        <ul class="footer-socials">
-          <li class="footer-socials-item fb-link">
-            <a href="#">
-              <span class="visually-hidden1">facebook</span>
-            </a>
-          </li>
-          <li class="footer-socials-item inst-link">
-            <a href="#">
-              <span class="visually-hidden1">instagram</span>
-            </a>
-          </li>
-          <li class="footer-socials-item tw-link">
-            <a href="#">
-              <span class="visually-hidden1">twitter</span>
-            </a>
-          </li>
-        </ul>
-      </div>
+          <ul class="footer-socials">
+            <li class="footer-socials-item fb-link">
+              <a href="#">
+                <span class="visually-hidden1">facebook</span>
+              </a>
+            </li>
+            <li class="footer-socials-item inst-link">
+              <a href="#">
+                <span class="visually-hidden1">instagram</span>
+              </a>
+            </li>
+            <li class="footer-socials-item tw-link">
+              <a href="#">
+                <span class="visually-hidden1">twitter</span>
+              </a>
+            </li>
+          </ul>
+        </div>
 
-      <div class="footer-right">
-        <ul class="footer-user-navigation">
-          <li class="user-navigation-item login-link">
-            <a href="#">
-              Войти
-            </a>
-          </li>
-          <!--
-          <li class="user-navigation-item username">
-            Натали Дормер
-          </li>
-          -->
-          <!--
-          <li class="user-navigation-item logout-link">
-            <a href="#">
-              Выйти
-            </a>
-          </li>
-          -->
-          <li class="user-navigation-item compare-link">
-            <a href="#">
-              Сравнить
-            </a>
-          </li>
-          <li class="user-navigation-item basket-link">
-            <a href="#">
-              Корзина
-            </a>
-          </li>
-        </ul>
+        <div class="footer-right">
+          <ul class="footer-user-navigation">
+            <li class="user-navigation-item login-link">
+              <a href="#">
+                Войти
+              </a>
+            </li>
+            <!--
+            <li class="user-navigation-item username">
+              Натали Дормер
+            </li>
+            -->
+            <!--
+            <li class="user-navigation-item logout-link">
+              <a href="#">
+                Выйти
+              </a>
+            </li>
+            -->
+            <li class="user-navigation-item compare-link">
+              <a href="#">
+                Сравнить
+              </a>
+            </li>
+            <li class="user-navigation-item basket-link">
+              <a href="#">
+                Корзина
+              </a>
+            </li>
+          </ul>
 
-        <p class="footer-phone">
-          Тел.: <a href="tel:+7495495-95-95">+7 (495) 495-95-95</a>
-        </p>
+          <p class="footer-phone">
+            Тел.: <a href="tel:+7495495-95-95">+7 (495) 495-95-95</a>
+          </p>
 
-        <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-          <span class="visually-hidden">Сайт академии</span>
-          <img src="./img/logo-html.svg" alt="copyright" width="27" height="35">
-        </a>
+          <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+            <span class="visually-hidden">Сайт академии</span>
+            <img src="./img/logo-html.svg" alt="copyright" width="27" height="35">
+          </a>
+        </div>
       </div>
     </footer>
   </body>
