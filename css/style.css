@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Gilroy-ExtraBold';
+  font-family: 'Gilroy';
   src: url('../fonts/gilroyextrabold.woff2') format('woff2'),
        url('../fonts/gilroyextrabold.woff') format('woff');
   font-weight: 800;
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: 'Gilroy-Light';
+  font-family: 'Gilroy';
   src: url('../fonts/gilroylight.woff2') format('woff2'),
        url('../fonts/gilroylight.woff') format('woff');
   font-weight: 300;
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  font-family: 'Open Sans-Light';
+  font-family: 'Open Sans';
   src: url('../fonts/opensans-light.woff2') format('woff2'),
        url('../fonts/opensans-light.woff') format('woff');
   font-weight: 400;
@@ -23,7 +23,7 @@
 }
 
 @font-face {
-  font-family: 'Open Sans-Regular';
+  font-family: 'Open Sans';
   src: url('../fonts/opensans-regular.woff2') format('woff2'),
        url('../fonts/opensans-regular.woff') format('woff');
   font-weight: 300;
@@ -33,7 +33,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Gilroy-ExtraBold', Arial, sans-serif;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
@@ -75,7 +75,7 @@ a {
 }
 
 .main-navigation-top {
-  font-family: 'Open Sans-Light', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
@@ -163,7 +163,7 @@ a {
 
 .catalog-links {
   background-color: #f7e296;
-  font-family: 'Open Sans-Light', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 15px;
   line-height: 36px;
   font-weight: 400;
@@ -188,7 +188,7 @@ a {
 }
 
 .footer-address {
-  font-family: 'Open Sans-Light', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
@@ -230,7 +230,7 @@ a {
 }
 
 .footer-right {
-  font-family: 'Open Sans-Light', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
@@ -295,7 +295,7 @@ a {
 }
 
 .slide-info {
-  font-family: 'Open Sans-Light', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
@@ -320,14 +320,14 @@ a {
 }
 
 .value {
-  font-family: 'Gilroy-Light', Arial, sans-serif;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-size: 36px;
   line-height: 48px;
   font-weight: 300;
 }
 
 .text {
-  font-family: 'Open Sans-Light', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 20px;
   font-weight: 400;
@@ -391,7 +391,7 @@ a {
 }
 
 .service-info {
-  font-family: 'Open Sans-Light', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
@@ -405,7 +405,7 @@ a {
 }
 
 .about-us-info, .contacts-info {
-  font-family: 'Open Sans-Light', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
@@ -441,7 +441,7 @@ a {
 .pop-up-contacts-form input,
 .pop-up-contacts-form textarea {
   border: none;
-  font-family: 'Open Sans-Light', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -488,7 +488,7 @@ a {
 }
 
 .breadcrumbs-chain {
-  font-family: 'Open Sans-Light', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
@@ -534,7 +534,7 @@ a {
 }
 
 .cost-range label {
-  font-family: 'Gilroy-Light', Arial, sans-serif;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
@@ -549,7 +549,7 @@ a {
 }
 
 .colors .checkbox {
-  font-family: 'Open Sans-Light', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 14px;
   line-height: 40px;
   font-weight: 400;
@@ -579,7 +579,7 @@ a {
 }
 
 .radio-label {
-  font-family: 'Open Sans-Light', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 14px;
   line-height: 40px;
   font-weight: 400;
@@ -615,7 +615,7 @@ a {
 }
 
 .sort-options {
-  font-family: 'Open Sans-Light', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -636,7 +636,7 @@ a {
 }
 
 .sort-btns {
-  font-family: 'Open Sans-Light', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -663,7 +663,7 @@ a {
 }
 
 .item-cost {
-  font-family: 'Gilroy-Light', Arial, sans-serif;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 300;
@@ -679,7 +679,7 @@ a {
 }
 
 .add-compare-btn {
-  font-family: 'Open Sans-Light', Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 36px;
   font-weight: 400;
