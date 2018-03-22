@@ -55,7 +55,7 @@
           <div class="main-navigation-bottom">
             <ul class="navigation-links">
               <li class="navigation-link catalog-link">
-                <a href="#">
+                <a href="./catalog.html">
                   Каталог товаров
                 </a>
 
@@ -115,19 +115,19 @@
           Слайдер с крутыми девайсами
         </h2>
 
-        <input type="radio" class="hidden" id="sld-1" name="slides" value="sld-1" checked>
-        <input type="radio" class="hidden" id="sld-2" name="slides" value="sld-2">
-        <input type="radio" class="hidden" id="sld-3" name="slides" value="sld-3">
+        <input type="radio" class="visually-hidden" id="sld-1" name="slides" value="sld-1" checked>
+        <input type="radio" class="visually-hidden" id="sld-2" name="slides" value="sld-2">
+        <input type="radio" class="visually-hidden" id="sld-3" name="slides" value="sld-3">
 
         <div class="slider-controls">
           <label class="slider-switcher" for="sld-1" tabindex="0">
-            <span class="visually-hidden1">Переключатель 1</span>
+            <span class="visually-hidden">Переключатель 1</span>
           </label>
           <label class="slider-switcher" for="sld-2" tabindex="0">
-            <span class="visually-hidden1">Переключатель 2</span>
+            <span class="visually-hidden">Переключатель 2</span>
           </label>
           <label class="slider-switcher" for="sld-3" tabindex="0">
-            <span class="visually-hidden1">Переключатель 3</span>
+            <span class="visually-hidden">Переключатель 3</span>
           </label>
         </div>
 
@@ -149,7 +149,9 @@
               </p>
 
               <a class="slide-info-link" href="#">
-                Подробнее
+                <span class="button-text">
+                  Подробнее
+                </span>
               </a>
 
               <ul class="slide-params-list">
@@ -186,13 +188,15 @@
               </p>
 
               <a class="slide-info-link" href="#">
-                Подробнее
+                <span class="button-text">
+                  Подробнее
+                </span>
               </a>
 
               <ul class="slide-params-list">
                 <li class="slide-params-item">
-                  <span class="value">48 часов</span>
-                  <span class="text">Без подзарядки</span>
+                  <span class="slide-params-value">48 часов</span>
+                  <span class="slide-params-text">Без подзарядки</span>
                 </li>
               </ul>
             </div>
@@ -215,17 +219,19 @@
               </p>
 
               <a class="slide-info-link" href="#">
-                Подробнее
+                <span class="button-text">
+                  Подробнее
+                </span>
               </a>
 
               <ul class="slide-params-list">
                 <li class="slide-params-item">
-                  <span class="value">800 м</span>
-                  <span class="text">Дальность полета</span>
+                  <span class="slide-params-value">800 м</span>
+                  <span class="slide-params-text">Дальность полета</span>
                 </li>
                 <li class="slide-params-item">
-                  <span class="value">50 м</span>
-                  <span class="text">Радиус поражения</span>
+                  <span class="slide-params-value">50 м</span>
+                  <span class="slide-params-text">Радиус поражения</span>
                 </li>
               </ul>
             </div>
@@ -295,64 +301,72 @@
           Обслуживание
         </h2>
 
-        <input type="radio" class="hidden" id="srv-1" name="services" value="srv-1" checked>
-        <input type="radio" class="hidden" id="srv-2" name="services" value="srv-2">
-        <input type="radio" class="hidden" id="srv-3" name="services" value="srv-3">
+        <input type="radio" class="visually-hidden" id="srv-1" name="services" value="srv-1" checked>
+        <input type="radio" class="visually-hidden" id="srv-2" name="services" value="srv-2">
+        <input type="radio" class="visually-hidden" id="srv-3" name="services" value="srv-3">
 
         <div class="services-wrapper">
           <div class="services-controls">
             <label class="services-switcher" for="srv-1">
-              Доставка
+              <span class="button-text">
+                Доставка
+              </span>
             </label>
             <label class="services-switcher" for="srv-2">
-              Гарантия
+              <span class="button-text">
+                Гарантия
+              </span>
             </label>
             <label class="services-switcher" for="srv-3">
-              Кредит
+              <span>
+                Кредит
+              </span>
             </label>
           </div>
 
-          <ul class="services-description">
-            <li class="service-description delivery-description">
-              <h2 class="service-title">
-                Доставка
-              </h2>
+          <div class="services-description-wrapper">
+            <ul class="services-description">
+              <li class="service-description delivery-description">
+                <h2 class="service-title">
+                  Доставка
+                </h2>
 
-              <p class="service-info">
-                Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
-              </p>
+                <p class="service-info">
+                  Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+                </p>
 
-              <div class="service-icon delivery-icon"> <!--иконка псевдоэлемент nth-->
-                <span class="visually-hidden1">Иконка-доставки</span>
-              </div>
-            </li>
-            <li class="service-description guarantee-description">
-              <h2 class="service-title">
-                Гарантия
-              </h2>
+                <div class="delivery-icon">
+                  <span class="visually-hidden">Иконка-доставки</span>
+                </div>
+              </li>
+              <li class="service-description guarantee-description">
+                <h2 class="service-title">
+                  Гарантия
+                </h2>
 
-              <p class="service-info">
-                Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
-              </p>
+                <p class="service-info">
+                  Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
+                </p>
 
-              <div class="service-icon guarantee-icon"> <!--иконка псевдоэлемент nth-->
-                <span class="visually-hidden1">Иконка-гарантии</span>
-              </div>
-            </li>
-            <li class="service-description credit-description">
-              <h2 class="service-title">
-                Кредит
-              </h2>
+                <div class="guarantee-icon">
+                  <span class="visually-hidden">Иконка-гарантии</span>
+                </div>
+              </li>
+              <li class="service-description credit-description">
+                <h2 class="service-title">
+                  Кредит
+                </h2>
 
-              <p class="service-info">
-                Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные  условия кредита. Выгодные для нашего банка, разумеется.
-              </p>
+                <p class="service-info">
+                  Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные  условия кредита. Выгодные для нашего банка, разумеется.
+                </p>
 
-              <div class="service-icon credit-icon"> <!--иконка псевдоэлемент nth-->
-                <span class="visually-hidden1">Иконка-кредита</span>
-              </div>
-            </li>
-          </ul>
+                <div class="service-icon credit-icon"> <!--иконка псевдоэлемент nth-->
+                  <span class="visually-hidden">Иконка-кредита</span>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -364,19 +378,15 @@
 
       <a class="partner-logo dji" href="#"> <!--background-item-->
         <span class="visually-hidden">DJI</span>
-        <img src="./img/logo-1.png" alt="partner-logo" width="260" height="100">
       </a>
       <a class="partner-logo spgadgets" href="#">
         <span class="visually-hidden">SPGadgets</span>
-        <img src="./img/logo-2.png" alt="partner-logo" width="260" height="100">
       </a>
       <a class="partner-logo gopro" href="#">
         <span class="visually-hidden">GoPro</span>
-        <img src="./img/logo-3.png" alt="partner-logo" width="260" height="100">
       </a>
       <a class="partner-logo vive" href="#">
         <span class="visually-hidden">Vive</span>
-        <img src="./img/logo-4.png" alt="partner-logo" width="260" height="100">
       </a>
     </section>
 
@@ -407,7 +417,7 @@
         </ul>
 
         <a class="about-us-link" href="#">
-          Подробнее о нас
+          <span class="button-text">Подробнее о нас</span>
         </a>
       </div>
 
@@ -426,45 +436,49 @@
         </div>
 
         <a class="button contacts-form-trigger" href="#">
-          Напишите нам
+          <span class="button-text">Напишите нам</span>
         </a>
       </div>
     </section>
 
     <div class="pop-up-map">
-      <img src="./img/map-big.jpg" alt="карта" width="960" height="559">
+      <div class="pop-up-wrapper">
+        <img src="./img/map-big.jpg" alt="карта" width="960" height="559">
 
-      <button class="close-map" id="close-map">
-        <span class="visually-hidden">Закрыть карту</span>
-        x
-      </button> <!--в css-->
+        <button class="close-map" id="close-map">
+          <span class="visually-hidden">Закрыть карту</span>
+        </button>
+      </div>
     </div>
 
     <div class="pop-up-contacts">
-      <form class="pop-up-contacts-form" method="post" action="https://echo.htmlacademy.ru">
-        <div class="labels-wrapper">
-          <label>
-            <span>Ваше имя:</span>
-            <input type="text" class="name" id="name" name="username" placeholder="Имя Фамилия">
+      <div class="pop-up-wrapper">
+        <form class="pop-up-contacts-form" method="post" action="https://echo.htmlacademy.ru">
+          <div class="labels-wrapper">
+            <label>
+              <span>Ваше имя:</span>
+              <input type="text" class="name" id="name" name="username" placeholder="Имя Фамилия">
+            </label>
+            <label>
+              <span>Ваш e-mail:</span>
+              <input type="email" class="email" id="email" name="email-adress" placeholder="email@example.com">
+            </label>
+          </div>
+
+          <label class="message-label">
+            <span>Текст письма:</span>
+            <textarea class="message" name="message" placeholder="В свободной форме"></textarea>
           </label>
-          <label>
-            <span>Ваш e-mail:</span>
-            <input type="email" class="email" id="email" name="email-adress" placeholder="email@example.com">
-          </label>
-        </div>
 
-        <label class="message-label">
-          <span>Текст письма:</span>
-          <textarea class="message" name="message" placeholder="В свободной форме"></textarea>
-        </label>
+          <button type="submit" class="submit-btn">
+            <span class="button-text">Отправить</span>
+          </button>
+        </form>
 
-        <button type="submit" class="submit-btn">Отправить</button>
-      </form>
-
-      <button class="close-form" id="close-form">
-        <span class="visually-hidden">Закрыть форму письма</span>
-        x
-      </button>
+        <button class="close-form" id="close-form">
+          <span class="visually-hidden">Закрыть форму письма</span>
+        </button>
+      </div>
     </div>
 
     <footer class="footer">
