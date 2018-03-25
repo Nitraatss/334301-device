@@ -1058,7 +1058,7 @@ input[type="radio"].visually-hidden {
   right: 0;
   z-index: -1;
 
-  max-width: 190px;
+  max-width: 210px;
 
   font-size: 179.2px;
   line-height: 179.2px;
@@ -1365,6 +1365,7 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: row;
       flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
