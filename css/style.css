@@ -2316,6 +2316,7 @@ input[type="radio"].visually-hidden {
 }
 
 .form-intro {
+  width: 100%;
   max-width: 200px;
 
   font-weight: 800;
