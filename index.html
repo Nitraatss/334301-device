@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.min.css">
   </head>
   <body>
     <div class="container">
@@ -115,9 +115,9 @@
           Слайдер с крутыми девайсами
         </h2>
 
-        <input type="radio" class="visually-hidden" id="sld-1" name="slides" value="sld-1" checked>
-        <input type="radio" class="visually-hidden" id="sld-2" name="slides" value="sld-2">
-        <input type="radio" class="visually-hidden" id="sld-3" name="slides" value="sld-3">
+        <input type="radio" class="sld-1 visually-hidden" id="sld-1" name="slides" value="sld-1" checked>
+        <input type="radio" class="sld-2 visually-hidden" id="sld-2" name="slides" value="sld-2">
+        <input type="radio" class="sld-3 visually-hidden" id="sld-3" name="slides" value="sld-3">
 
         <div class="slider-controls">
           <label class="slider-switcher" for="sld-1" tabindex="0">
@@ -301,9 +301,9 @@
           Обслуживание
         </h2>
 
-        <input type="radio" class="visually-hidden" id="srv-1" name="services" value="srv-1" checked>
-        <input type="radio" class="visually-hidden" id="srv-2" name="services" value="srv-2">
-        <input type="radio" class="visually-hidden" id="srv-3" name="services" value="srv-3">
+        <input type="radio" class="srv-1 visually-hidden" id="srv-1" name="services" value="srv-1" checked>
+        <input type="radio" class="srv-2 visually-hidden" id="srv-2" name="services" value="srv-2">
+        <input type="radio" class="srv-3 visually-hidden" id="srv-3" name="services" value="srv-3">
 
         <div class="services-wrapper">
           <div class="services-controls">
@@ -441,7 +441,7 @@
       </div>
     </section>
 
-    <div class="pop-up-map">
+    <div class="pop-up-map hidden">
       <div class="pop-up-wrapper">
         <img src="./img/map-big.jpg" alt="карта" width="960" height="559">
 
@@ -451,7 +451,7 @@
       </div>
     </div>
 
-    <div class="pop-up-contacts">
+    <div class="pop-up-contacts hidden">
       <div class="pop-up-wrapper">
         <form class="pop-up-contacts-form" method="post" action="https://echo.htmlacademy.ru">
           <div class="labels-wrapper">
@@ -473,11 +473,11 @@
           <button type="submit" class="submit-btn">
             <span class="button-text">Отправить</span>
           </button>
-        </form>
 
-        <button class="close-form" id="close-form">
-          <span class="visually-hidden">Закрыть форму письма</span>
-        </button>
+          <button class="close-form" id="close-form">
+            <span class="visually-hidden">Закрыть форму письма</span>
+          </button>
+        </form>
       </div>
     </div>
 

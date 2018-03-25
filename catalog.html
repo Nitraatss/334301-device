@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
     <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.min.css">
   </head>
   <body>
     <div class="container">
@@ -132,7 +132,7 @@
         <div class="content">
           <aside class="filters">
             <h3 class="filters-intro">
-              Фильтр:
+              <span>Фильтр:</span>
             </h3>
 
             <form class="filters-form" method="get" action="https://echo.htmlacademy.ru">
@@ -169,11 +169,11 @@
                 </span>
 
                 <div class="colors-wrapper">
-                  <input type="checkbox" class="visually-hidden" id="check1" name="color-black" value="black" checked>
-                  <input type="checkbox" class="visually-hidden" id="check2" name="color-white" value="white">
-                  <input type="checkbox" class="visually-hidden" id="check3" name="color-blue" value="blue" checked>
-                  <input type="checkbox" class="visually-hidden" id="check4"  name="color-red" value="red" checked>
-                  <input type="checkbox" class="visually-hidden" id="check5" name="color-pink" value="pink">
+                  <input type="checkbox" class="check1 visually-hidden" id="check1" name="color-black" value="black" checked>
+                  <input type="checkbox" class="check2 visually-hidden" id="check2" name="color-white" value="white">
+                  <input type="checkbox" class="check3 visually-hidden" id="check3" name="color-blue" value="blue" checked>
+                  <input type="checkbox" class="check4 visually-hidden" id="check4"  name="color-red" value="red" checked>
+                  <input type="checkbox" class="check5 visually-hidden" id="check5" name="color-pink" value="pink">
 
                   <label class="checkbox" for="check1" tabindex="0">
                     Черный
@@ -204,13 +204,13 @@
 
                 <ul class="bluetooth-options">
                   <li class="bluetooth-option">
-                    <input type="radio" class="visually-hidden" id="blue1" name="bluetooth" value="yes" checked>
+                    <input type="radio" class="blue1 visually-hidden" id="blue1" name="bluetooth" value="yes" checked>
                     <label class="radio-label" for="blue1">
                       Есть
                     </label>
                   </li>
                   <li class="bluetooth-option">
-                    <input type="radio" class="visually-hidden" id="blue2" name="bluetooth" value="no">
+                    <input type="radio" class="blue2 visually-hidden" id="blue2" name="bluetooth" value="no">
                     <label class="radio-label" for="blue2">
                       Нет
                     </label>
