@@ -855,8 +855,8 @@ input[type="radio"].visually-hidden {
   justify-content: center;
   align-items: center;
   margin: 0;
-  margin-left: 509px;
   padding: 0;
+  padding-left: 509px;
 
   list-style: none;
 
@@ -903,6 +903,10 @@ input[type="radio"].visually-hidden {
 
 .footer-socials-item:active {
   opacity: 0.1;
+}
+
+.academy-logo {
+  margin-left: auto;
 }
 
 .academy-logo img {
@@ -2268,6 +2272,7 @@ input[type="radio"].visually-hidden {
   align-items: center;
   max-width: 90px;
   min-height: 70px;
+  padding: 20px 0;
 
   word-wrap: break-word;
 
@@ -2690,7 +2695,7 @@ input[type="radio"].visually-hidden {
   min-height: 70px;
   margin: 0;
   margin-right: 53px;
-  padding: 0;
+  padding: 20px 0;
 
   font-weight: 800;
   font-size: 16px;
@@ -2714,7 +2719,7 @@ input[type="radio"].visually-hidden {
   align-items: center;
   min-height: 70px;
   margin: 0;
-  padding: 0;
+  padding: 20px 0;
 
   list-style: none;
   font-weight: 400;
@@ -2767,7 +2772,7 @@ input[type="radio"].visually-hidden {
   min-height: 70px;
   margin: 0;
   margin-left: auto;
-  padding: 0;
+  padding: 20px 0;
 
   list-style: none;
   font-weight: 400;
@@ -3131,6 +3136,7 @@ input[type="radio"].visually-hidden {
   width: 100%;
   max-width: 140px;
   min-height: 70px;
+  padding: 20px;
 
   word-wrap: break-word;
 
