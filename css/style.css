@@ -2256,7 +2256,12 @@ input[type="radio"].visually-hidden {
 }
 
 .filters-intro span {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   max-width: 90px;
+  min-height: 70px;
 
   word-wrap: break-word;
 }
@@ -2657,13 +2662,18 @@ input[type="radio"].visually-hidden {
   z-index: -2;
 
   width: 2000px;
-  height: 70px;
+  height: 100%;
+  min-height: 70px;
 
   background-color: #ebebeb;
 }
 
 .sort-intro {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   max-width: 150px;
+  min-height: 70px;
   margin: 0;
   margin-right: 53px;
   padding: 0;
@@ -2674,6 +2684,7 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   letter-spacing: 3.2px;
   word-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .sort-options {
@@ -2681,7 +2692,8 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
+  min-height: 70px;
   margin: 0;
   padding: 0;
 
@@ -2724,6 +2736,12 @@ input[type="radio"].visually-hidden {
 }
 
 .sort-btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 50px;
+  min-height: 70px;
   margin: 0;
   margin-left: auto;
   padding: 0;
@@ -2735,11 +2753,7 @@ input[type="radio"].visually-hidden {
   font-family: "Open Sans", Arial, sans-serif;
 }
 
-.sort-btns li {
-  display: inline-block;
-}
-
-.sort-btns li:first-of-type {
+.sort-btns li:not(:last-of-type) {
   margin-right: 16px;
 }
 
