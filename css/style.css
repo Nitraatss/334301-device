@@ -433,7 +433,7 @@ input[type="radio"].visually-hidden {
 .navigation-link.catalog-link {
   position: relative;
 
-  max-width: 251px;
+  max-width: 255px;
   margin-right: 294px;
   padding-right: 31px;
 }
@@ -740,7 +740,7 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-address {
-  max-width: 202px;
+  max-width: 210px;
   margin: 0;
 
   font-weight: 400;
@@ -790,7 +790,7 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-phone {
-  max-width: 163px;
+  max-width: 170px;
   margin: 0;
   padding: 0;
 
@@ -2235,11 +2235,11 @@ input[type="radio"].visually-hidden {
       flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
-  max-width: 468px;
+  max-width: 473px;
   min-height: 70px;
   margin: 0;
   padding: 0;
-  padding-right: 180px;
+  padding-right: 170px;
 
   font-weight: 800;
   font-size: 16px;
@@ -2256,7 +2256,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filters-intro span {
-  max-width: 88px;
+  max-width: 90px;
 
   word-wrap: break-word;
 }
@@ -2663,7 +2663,7 @@ input[type="radio"].visually-hidden {
 }
 
 .sort-intro {
-  max-width: 145px;
+  max-width: 150px;
   margin: 0;
   margin-right: 53px;
   padding: 0;
@@ -3085,6 +3085,7 @@ input[type="radio"].visually-hidden {
       flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  width: 100%;
   max-width: 140px;
   min-height: 70px;
 
