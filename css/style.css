@@ -1229,7 +1229,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slide-params-value {
-  max-width: 150px;
+  max-width: 160px;
   margin-bottom: 5px;
 
   font-weight: 300;
