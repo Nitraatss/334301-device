@@ -758,6 +758,8 @@ input[type="radio"].visually-hidden {
       flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  max-width: 450px;
   margin: 0;
   padding: 0;
 
@@ -3103,7 +3105,21 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-pagination-item:not(:last-of-type):not(:first-of-type):not(:nth-last-of-type(2)) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+      flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 70px;
   margin-right: 28px;
+  padding: 20px 0;
+
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  -ms-flex-wrap: wrap;
 }
 
 .catalog-pagination-item {
