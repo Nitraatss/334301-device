@@ -3107,7 +3107,7 @@ input[type="radio"].visually-hidden {
   -ms-flex-wrap: wrap;
 }
 
-.catalog-pagination-item:not(:last-of-type):not(:first-of-type):not(:nth-last-of-type(2)) {
+.catalog-pagination-item:not(:last-of-type):not(:first-of-type) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
