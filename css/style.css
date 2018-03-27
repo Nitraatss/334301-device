@@ -1804,6 +1804,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 81px;
 
   background-color: white;
+  cursor: pointer;
 }
 
 .about-us-link,
@@ -1878,13 +1879,16 @@ input[type="radio"].visually-hidden {
 }
 
 .pop-up-contacts {
-  position: relative;
-
   max-width: 960px;
 }
 
 .pop-up-wrapper {
   position: relative;
+}
+
+.pop-up-map .pop-up-wrapper {
+  max-height: 559px;
+  overflow: hidden;
 }
 
 .close-form,
@@ -1988,13 +1992,17 @@ input[type="radio"].visually-hidden {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 50px;
-  padding: 0 20px;
+  padding: 20px;
 }
 
 .pop-up-contacts-form label {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
+}
+
+.pop-up-contacts-form textarea {
+  padding: 20px;
 }
 
 .pop-up-contacts-form input,
@@ -2025,7 +2033,9 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 
-.pop-up-contacts-form input:invalid {
+.pop-up-contacts-form input:invalid,
+.pop-up-contacts-form input.invalid,
+.pop-up-contacts-form textarea.invalid {
   background-color: #edb5b5;
   opacity: 0.5;
 }
@@ -2091,7 +2101,7 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
-.pop-up-contacts-form,
+.pop-up-contacts,
 .pop-up-map {
   position: fixed;
   top: 50%;
@@ -2102,11 +2112,23 @@ input[type="radio"].visually-hidden {
   -webkit-transform: translateX(-50%) translateY(-50%);
       -ms-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
+  opacity: 1;
+
+  -webkit-transition: 0.3s ease-in-out;
+       -o-transition: 0.3s ease-in-out;
+          transition: 0.3s ease-in-out;
+}
+
+.pop-up-map {
+  z-index: 101;
 }
 
 .pop-up-contacts.hidden,
 .pop-up-map.hidden {
-  display: none;
+  left: 100%;
+  z-index: -1;
+
+  opacity: 0;
 }
 
 /* catalog */
@@ -2356,8 +2378,8 @@ input[type="radio"].visually-hidden {
   margin-bottom: 32px;
 }
 
-.cost-range .form-intro {
-  margin-bottom: 42px;
+.cost-range > .form-intro {
+  padding-bottom: 39px;
 }
 
 .scale {
@@ -2453,8 +2475,8 @@ input[type="radio"].visually-hidden {
   margin-bottom: 32px;
 }
 
-.colors .form-intro {
-  margin-bottom: 30px;
+.colors > .form-intro {
+  padding-bottom: 27px;
 }
 
 .colors-wrapper {
@@ -2526,8 +2548,8 @@ input[type="radio"].visually-hidden {
   margin-bottom: 52px;
 }
 
-.bluetooth .form-intro {
-  margin-bottom: 30px;
+.bluetooth > .form-intro {
+  padding-bottom: 27px;
 }
 
 .bluetooth-options {
