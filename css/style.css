@@ -251,6 +251,7 @@ input[type="radio"].visually-hidden {
 
   background-color: black;
   outline: none;
+  cursor: pointer;
 }
 
 .search-form .submit-btn:active {
@@ -899,6 +900,7 @@ input[type="radio"].visually-hidden {
 
 .footer-socials-item:hover,
 .footer-socials-item:focus {
+  cursor: pointer;
   opacity: 0.6;
 }
 
@@ -952,6 +954,7 @@ input[type="radio"].visually-hidden {
 .slider-switcher:hover,
 .slider-switcher:active {
   outline: none;
+  cursor: pointer;
 }
 
 .slider-switcher::before {
@@ -1298,6 +1301,9 @@ input[type="radio"].visually-hidden {
   width: inherit;
   margin: 0;
 
+  font-weight: 700px;
+  font-size: 18px;
+  line-height: 24px;
   word-wrap: break-word;
 }
 
@@ -1417,6 +1423,10 @@ input[type="radio"].visually-hidden {
   max-width: inherit;
 
   word-wrap: break-word;
+}
+
+.services-switcher:hover {
+  cursor: pointer;
 }
 
 .services-switcher::before {
@@ -2414,6 +2424,10 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
+.range-circle {
+  cursor: pointer;
+}
+
 .range-circle-min {
   left: -10px;
 }
@@ -2509,6 +2523,10 @@ input[type="radio"].visually-hidden {
   font-family: "Open Sans", Arial, sans-serif;
   vertical-align: top;
   word-wrap: break-word;
+}
+
+.checkbox:hover {
+  cursor: pointer;
 }
 
 .checkbox:last-of-type {
@@ -2609,6 +2627,10 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
+.radio-label:hover {
+  cursor: pointer;
+}
+
 .blue1:checked ~ label[for="blue1"]::before,
 .blue2:checked ~ label[for="blue2"]::before {
   background-image: url("../img/radio-on.svg");
@@ -2666,6 +2688,10 @@ input[type="radio"].visually-hidden {
   height: 40px;
 
   outline: none;
+}
+
+.filters-form .submit-bnt {
+  cursor: pointer;
 }
 
 .submit-bnt:active .button-text {
