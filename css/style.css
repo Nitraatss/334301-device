@@ -320,6 +320,8 @@ input[type="radio"].visually-hidden {
   max-width: 136px;
   margin-right: 15px;
   padding-left: 26px;
+
+  word-wrap: break-word;
 }
 
 .header-user-navigation .username::before {
@@ -1064,7 +1066,7 @@ input[type="radio"].visually-hidden {
 .slide-number {
   position: absolute;
   top: -13px;
-  right: 0;
+  right: 57px;
   z-index: -1;
 
   max-width: 220px;
@@ -1596,7 +1598,7 @@ input[type="radio"].visually-hidden {
   align-items: flex-start;
   width: 1160px;
   margin: 0 auto;
-  margin-bottom: 93px;
+  margin-bottom: 150px;
 
   -webkit-box-align: start;
   -webkit-box-pack: start;
@@ -1724,6 +1726,8 @@ input[type="radio"].visually-hidden {
 }
 
 .about-us-title {
+  position: relative;
+
   max-width: 100%;
   margin: 0;
   margin-bottom: 51px;
@@ -1733,6 +1737,18 @@ input[type="radio"].visually-hidden {
   line-height: 48px;
   word-wrap: break-word;
   word-wrap: break-word;
+}
+
+.about-us-title::before {
+  content: "";
+  position: absolute;
+  top: -53px;
+  left: 0;
+
+  width: 79px;
+  height: 7px;
+
+  background-color: black;
 }
 
 .about-us-info,
@@ -2043,11 +2059,52 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translate(0) rotate(0);
+            transform: translate(0) rotate(0);
+  }
+
+  30%,
+  90% {
+    -webkit-transform: translate(-5px, 5px) rotate(3deg);
+            transform: translate(-5px, 5px) rotate(3deg);
+  }
+
+  60% {
+    -webkit-transform: translate(5px, -5px) rotate(-3deg);
+            transform: translate(5px, -5px) rotate(-3deg);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translate(0) rotate(0);
+            transform: translate(0) rotate(0);
+  }
+
+  30%,
+  90% {
+    -webkit-transform: translate(-5px, 5px) rotate(3deg);
+            transform: translate(-5px, 5px) rotate(3deg);
+  }
+
+  60% {
+    -webkit-transform: translate(5px, -5px) rotate(-3deg);
+            transform: translate(5px, -5px) rotate(-3deg);
+  }
+}
+
 .pop-up-contacts-form input:invalid,
 .pop-up-contacts-form input.invalid,
 .pop-up-contacts-form textarea.invalid {
   background-color: #edb5b5;
   opacity: 0.5;
+
+  -webkit-animation: shake 0.5s;
+          animation: shake 0.5s;
 }
 
 .pop-up-contacts-form .submit-btn {
@@ -2562,6 +2619,14 @@ input[type="radio"].visually-hidden {
   background-position: 0 0;
 }
 
+.check1:disabled ~ label[for="check1"],
+.check2:disabled ~ label[for="check2"],
+.check3:disabled ~ label[for="check3"],
+.check4:disabled ~ label[for="check4"],
+.check5:disabled ~ label[for="check5"] {
+  opacity: 0.25;
+}
+
 .filters-form .bluetooth {
   margin-bottom: 52px;
 }
@@ -2636,6 +2701,11 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/radio-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.blue1:disabled ~ label[for="blue1"]::before,
+.blue2:disabled ~ label[for="blue2"]::before {
+  opacity: 0.25;
 }
 
 .filters-form .submit-bnt {

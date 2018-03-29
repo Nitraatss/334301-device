@@ -13,6 +13,9 @@
   var ESC_KEYCODE = 27;
 
   var hideContactsForm = function () {
+    name.classList.remove("invalid");
+    email.classList.remove("invalid");
+    message.classList.remove("invalid");
     popUpContacts.classList.add("hidden");
 
     closeForm.removeEventListener("click", onCloseFormClick);
@@ -41,17 +44,17 @@
 
     if(!name.value) {
       name.classList.add("invalid");
-      var allFilled = false;
+      allFilled = false;
     }
 
     if (!email.value) {
       email.classList.add("invalid");
-      var allFilled = false;
+      allFilled = false;
     }
 
     if (!message.value) {
       message.classList.add("invalid");
-      var allFilled = false;
+      allFilled = false;
     }
 
     if (allFilled) {
@@ -64,6 +67,7 @@
     evtTrigger.preventDefault();
 
     popUpContacts.classList.remove("hidden");
+    popUpContacts.classList.add("show-animation");
 
     name.focus();
 
