@@ -1387,7 +1387,7 @@ input[type="radio"].visually-hidden {
   min-width: 278px;
   max-width: 278px;
   min-height: 40px;
-  padding: 0;
+  padding: 8px 0;
   padding-right: 113px;
 
   font-weight: 800;
@@ -2335,7 +2335,7 @@ input[type="radio"].visually-hidden {
   max-width: 473px;
   min-height: 70px;
   margin: 0;
-  padding: 0;
+  padding: 23px 0;
   padding-right: 180px;
 
   font-weight: 800;
@@ -2360,8 +2360,7 @@ input[type="radio"].visually-hidden {
   justify-content: center;
   align-items: center;
   max-width: 90px;
-  min-height: 70px;
-  padding: 20px 0;
+  min-height: 24px;
 
   word-wrap: break-word;
 
@@ -2779,7 +2778,6 @@ input[type="radio"].visually-hidden {
   max-width: 832px;
   min-height: 70px;
   margin-bottom: 70px;
-  padding: 20px 0;
   padding-left: 73px;
 
   -webkit-box-align: center;
@@ -2810,9 +2808,10 @@ input[type="radio"].visually-hidden {
   justify-content: flex-start;
   align-items: center;
   max-width: 150px;
-  min-height: 24px;
+  min-height: 70px;
   margin: 0;
-  margin-right: 53px;
+  margin-right: 54px;
+  padding: 23px 0;
 
   font-weight: 800;
   font-size: 16px;
@@ -2835,7 +2834,9 @@ input[type="radio"].visually-hidden {
       flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
+  min-height: 70px;
   margin: 0;
+  padding: 26px 0;
 
   list-style: none;
   font-weight: 400;
@@ -2899,9 +2900,10 @@ input[type="radio"].visually-hidden {
   justify-content: flex-start;
   align-items: center;
   max-width: 50px;
+  min-height: 70px;
   margin: 0;
   margin-left: auto;
-  padding: 0;
+  padding: 30px 0;
 
   list-style: none;
 
@@ -3253,7 +3255,7 @@ input[type="radio"].visually-hidden {
   align-items: center;
   min-height: 70px;
   margin-right: 28px;
-  padding: 20px 0;
+  padding: 23px 0;
 
   -webkit-box-align: center;
   -webkit-box-pack: center;
@@ -3292,7 +3294,7 @@ input[type="radio"].visually-hidden {
   width: 100%;
   max-width: 140px;
   min-height: 70px;
-  padding: 20px;
+  padding: 23px 20px;
 
   word-wrap: break-word;
 
