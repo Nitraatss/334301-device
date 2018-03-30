@@ -317,14 +317,14 @@ input[type="radio"].visually-hidden {
 .header-user-navigation .username {
   position: relative;
 
-  max-width: 136px;
+  max-width: 150px;
   margin-right: 15px;
   padding-left: 26px;
 
   word-wrap: break-word;
 }
 
-.header-user-navigation .username::before {
+.header-user-navigation .username a::before {
   content: "";
   position: absolute;
   top: 0;
@@ -663,7 +663,7 @@ input[type="radio"].visually-hidden {
 .footer-user-navigation .username {
   position: relative;
 
-  max-width: 140px;
+  max-width: 150px;
   margin-right: 19px;
   padding-left: 28px;
 }
@@ -1802,7 +1802,7 @@ input[type="radio"].visually-hidden {
   width: 8px;
   height: 8px;
 
-  background-image: url("../img/slider-button-empty.svg");
+  background-image: url("../img/transport-btn.png");
   background-repeat: no-repeat;
   background-position: 0 0;
   background-size: cover;
@@ -1971,6 +1971,13 @@ input[type="radio"].visually-hidden {
   -ms-flex-wrap: wrap;
 }
 
+.label-text {
+  display: block;
+  margin-bottom: 10px;
+
+  word-wrap: break-word;
+}
+
 .labels-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2018,7 +2025,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 50px;
-  padding: 20px;
+  padding: 16px 20px;
 }
 
 .pop-up-contacts-form label {
@@ -2028,7 +2035,7 @@ input[type="radio"].visually-hidden {
 }
 
 .pop-up-contacts-form textarea {
-  padding: 20px;
+  padding: 16px 20px;
 }
 
 .pop-up-contacts-form input,
@@ -3181,7 +3188,8 @@ input[type="radio"].visually-hidden {
   opacity: 0.2;
 }
 
-.new-item {
+.catalog-item.new-item::before {
+  content: "New";
   position: absolute;
   top: 30px;
   left: 270px;
