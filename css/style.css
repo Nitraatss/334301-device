@@ -2605,11 +2605,11 @@ input[type="radio"].visually-hidden {
   opacity: 0.6;
 }
 
-.check1:checked ~ label[for="check1"],
-.check2:checked ~ label[for="check2"],
-.check3:checked ~ label[for="check3"],
-.check4:checked ~ label[for="check4"],
-.check5:checked ~ label[for="check5"] {
+.check1:checked ~ label[for="check1"]::before,
+.check2:checked ~ label[for="check2"]::before,
+.check3:checked ~ label[for="check3"]::before,
+.check4:checked ~ label[for="check4"]::before,
+.check5:checked ~ label[for="check5"]::before {
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
