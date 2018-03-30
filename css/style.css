@@ -222,6 +222,12 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 
+.search-form:active .search {
+  border-bottom: 2px solid black;
+  outline: none;
+  opacity: 1;
+}
+
 .search-form .submit-btn {
   display: none;
   min-width: 85px;
@@ -255,9 +261,24 @@ input[type="radio"].visually-hidden {
 }
 
 .search-form .submit-btn:active {
+  position: relative;
+
   display: block;
 
   outline: none;
+}
+
+.search-form .submit-btn:active::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: -357px;
+  z-index: 10;
+
+  width: 355px;
+  height: 2px;
+
+  background: black;
 }
 
 .search-form .submit-btn:active span {
@@ -3247,8 +3268,8 @@ input[type="radio"].visually-hidden {
   background-color: #ebebeb;
 
   -webkit-box-align: center;
-  -webkit-box-pack: justify;
   -webkit-box-pack: center;
+  -webkit-box-pack: justify;
   -ms-flex-align: center;
   -ms-flex-pack: justify;
   -ms-flex-pack: center;
