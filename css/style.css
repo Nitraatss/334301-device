@@ -109,8 +109,8 @@ input[type="radio"].visually-hidden {
           box-sizing: border-box;
   margin: 0 auto;
   padding: 0 60px;
-  padding-top: 34px;
-  padding-bottom: 48px;
+  padding-top: 27px;
+  padding-bottom: 53px;
 
   background-color: #f7e296;
 
@@ -470,8 +470,8 @@ input[type="radio"].visually-hidden {
   width: 1160px;
   margin: 0;
   padding: 0 60px;
-  padding-top: 30px;
-  padding-bottom: 33px;
+  padding-top: 35px;
+  padding-bottom: 43px;
 
   list-style: none;
   font-weight: 400;
@@ -517,7 +517,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-links > .catalog-link a {
   width: 100%;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .catalog-links > .catalog-link a:last-of-type {
@@ -1111,7 +1111,7 @@ input[type="radio"].visually-hidden {
 .slide-title::before {
   content: "";
   position: absolute;
-  top: 51px;
+  top: 30px;
 
   width: 100px;
   height: 7px;
@@ -1303,7 +1303,7 @@ input[type="radio"].visually-hidden {
   width: inherit;
   margin: 0;
 
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   word-wrap: break-word;
@@ -1736,7 +1736,6 @@ input[type="radio"].visually-hidden {
   font-size: 47px;
   line-height: 48px;
   word-wrap: break-word;
-  word-wrap: break-word;
 }
 
 .about-us-title::before {
@@ -1958,8 +1957,8 @@ input[type="radio"].visually-hidden {
           box-sizing: border-box;
   width: 960px;
   padding: 0 100px;
-  padding-top: 97px;
-  padding-bottom: 106px;
+  padding-top: 93px;
+  padding-bottom: 88px;
 
   -webkit-box-shadow: 0 10px 20px 0 rgba(4,6,6,0.20);
           box-shadow: 0 10px 20px 0 rgba(4,6,6,0.20);
@@ -2213,10 +2212,7 @@ input[type="radio"].visually-hidden {
 
 .current-category {
   width: 1040px;
-  margin-top: 43px;
-  margin-right: auto;
-  margin-bottom: 18px;
-  margin-left: auto;
+  margin: 43px auto 18px auto;
   padding: 0;
 
   font-weight: 800;
@@ -2340,7 +2336,7 @@ input[type="radio"].visually-hidden {
   min-height: 70px;
   margin: 0;
   padding: 0;
-  padding-right: 170px;
+  padding-right: 180px;
 
   font-weight: 800;
   font-size: 16px;
@@ -2399,7 +2395,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   padding-top: 69px;
-  padding-right: 56px;
+  padding-right: 68px;
 
   background-color: #efefef;
 
@@ -2780,11 +2776,11 @@ input[type="radio"].visually-hidden {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
           box-sizing: border-box;
+  max-width: 832px;
   min-height: 70px;
   margin-bottom: 70px;
-  padding: 0;
-  padding-right: 140px;
-  padding-left: 72px;
+  padding: 20px 0;
+  padding-left: 73px;
 
   -webkit-box-align: center;
   -webkit-box-pack: start;
@@ -2814,10 +2810,9 @@ input[type="radio"].visually-hidden {
   justify-content: flex-start;
   align-items: center;
   max-width: 150px;
-  min-height: 70px;
+  min-height: 24px;
   margin: 0;
   margin-right: 53px;
-  padding: 20px 0;
 
   font-weight: 800;
   font-size: 16px;
@@ -2865,9 +2860,8 @@ input[type="radio"].visually-hidden {
   justify-content: center;
   align-items: center;
   max-width: 200px;
-  min-height: 70px;
+  min-height: 18px;
   margin-right: 20px;
-  padding: 20px 0;
 
   word-wrap: break-word;
 
@@ -2910,10 +2904,6 @@ input[type="radio"].visually-hidden {
   padding: 0;
 
   list-style: none;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  font-family: "Open Sans", Arial, sans-serif;
 
   -webkit-box-align: center;
   -webkit-box-pack: start;
@@ -2928,8 +2918,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 70px;
-  padding: 20px 0;
+  min-height: 10px;
 
   word-wrap: break-word;
 
@@ -3233,9 +3222,7 @@ input[type="radio"].visually-hidden {
           box-sizing: border-box;
   max-width: 760px;
   min-height: 70px;
-  margin: 0;
-  margin-bottom: 77px;
-  margin-left: 72px;
+  margin: 0 0 77px 72px;
   padding: 0;
 
   list-style: none;
@@ -3247,8 +3234,8 @@ input[type="radio"].visually-hidden {
   background-color: #ebebeb;
 
   -webkit-box-align: center;
-  -webkit-box-pack: justify;
   -webkit-box-pack: center;
+  -webkit-box-pack: justify;
   -ms-flex-align: center;
   -ms-flex-pack: justify;
   -ms-flex-pack: center;
@@ -3321,7 +3308,7 @@ input[type="radio"].visually-hidden {
   background-color: #d9d9d9;
 }
 
-.prev-page:active
+.prev-page:active,
 .next-page:active {
   opacity: 0.3;
 }
