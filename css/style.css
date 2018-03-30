@@ -1045,7 +1045,7 @@ input[type="radio"].visually-hidden {
   z-index: -1;
 
   width: 100%;
-  height: 114px;
+  height: 113px;
 
   background-color: #f7e296;
 }
@@ -3239,8 +3239,8 @@ input[type="radio"].visually-hidden {
   background-color: #ebebeb;
 
   -webkit-box-align: center;
-  -webkit-box-pack: center;
   -webkit-box-pack: justify;
+  -webkit-box-pack: center;
   -ms-flex-align: center;
   -ms-flex-pack: justify;
   -ms-flex-pack: center;
